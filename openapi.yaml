@@ -1,47 +1,49 @@
 openapi: 3.0.4
 info:
   title: Roman Numeral Math
-  description: Roman Numeral Math is a tool for performing mathematical operations (add, subtract, multiply, divide) with Roman numerals. It shows both numeric and Roman numeral equations.
+  description: >-
+    Roman Numeral Math is a tool for performing mathematical operations (add,
+    subtract, multiply, divide) with Roman numerals. It shows both numeric and
+    Roman numeral equations.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/romannumeralmath:
     get:
       summary: Calculate Roman Numerals
-      description: Roman Numeral Math is a tool for performing mathematical operations (add, subtract, multiply, divide) with Roman numerals. It shows both numeric and Roman numeral equations.
+      description: Perform arithmetic operations with Roman numerals
       operationId: romannumeralmath
       parameters:
-      - name: roman1
-        in: query
-        schema:
-          type: string
-        required: true
-        description: The first Roman numeral
-        example: XIV
-      - name: roman2
-        in: query
-        schema:
-          type: string
-        required: true
-        description: The second Roman numeral
-        example: VI
-      - name: operation
-        default: add
-        in: query
-        schema:
-          type: string
-        required: false
-        description: 'Operation to perform: add, subtract, multiply, or divide (default: add)'
-        example: add
+        - name: roman1
+          in: query
+          schema:
+            type: string
+          required: true
+          description: The first Roman numeral
+          example: XIV
+        - name: roman2
+          in: query
+          schema:
+            type: string
+          required: true
+          description: The second Roman numeral
+          example: VI
+        - name: operation
+          in: query
+          schema:
+            type: string
+          required: false
+          description: Operation to perform
+          example: add
       responses:
         '200':
           description: Successful Response
@@ -57,11 +59,11 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   roman1: XIV
                   roman2: VI
@@ -77,7 +79,7 @@ paths:
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -85,4 +87,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
