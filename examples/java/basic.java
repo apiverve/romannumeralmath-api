@@ -12,14 +12,8 @@ public class BasicExample {
         RomanNumeralMathAPIClient client = new RomanNumeralMathAPIClient("YOUR_API_KEY_HERE");
 
         try {
-            // Query parameters
-            Map&lt;String, Object&gt; parameters &#x3D; new HashMap&lt;&gt;();
-        parameters.put(&quot;roman1&quot;, &quot;XIV&quot;);
-        parameters.put(&quot;roman2&quot;, &quot;VI&quot;);
-        parameters.put(&quot;operation&quot;, &quot;add&quot;);
-
-            // Execute the API request
-            APIResponse response = client.execute(parameters);
+            // Execute the API request (no parameters required)
+            APIResponse response = client.execute(null);
 
             // Check if the request was successful
             if (response.isSuccess()) {
