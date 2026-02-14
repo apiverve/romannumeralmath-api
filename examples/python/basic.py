@@ -17,14 +17,11 @@ def call_romannumeralmath_api():
     Make a GET request to the Roman Numeral Math API
     """
     try:
-        # Query parameters
-        params &#x3D; {&#x27;roman1&#x27;: &#x27;XIV&#x27;, &#x27;roman2&#x27;: &#x27;VI&#x27;, &#x27;operation&#x27;: &#x27;add&#x27;}
-
         headers = {
             'x-api-key': API_KEY
         }
 
-        response = requests.get(API_URL, headers=headers, params=params)
+        response = requests.get(API_URL, headers=headers)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
