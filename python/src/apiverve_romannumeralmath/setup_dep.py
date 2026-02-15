@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='apiverve_romannumeralmath',
-    version='1.1.12',
+    version='1.1.13',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
@@ -12,7 +12,7 @@ setup(
     description='Roman Numeral Math is a tool for performing mathematical operations (add, subtract, multiply, divide) with Roman numerals. It shows both numeric and Roman numeral equations.',
     author='APIVerve',
     author_email='hello@apiverve.com',
-    url='https://apiverve.com',
+    url='https://apiverve.com/marketplace/romannumeralmath?utm_source=pypi&utm_medium=homepage',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
