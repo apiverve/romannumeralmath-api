@@ -12,21 +12,18 @@ namespace APIVerve.API.RomanNumeralMath
     {
         /// <summary>
         /// The first Roman numeral
-        /// Example: XIV
         /// </summary>
         [JsonProperty("roman1")]
         public string Roman1 { get; set; }
 
         /// <summary>
         /// The second Roman numeral
-        /// Example: VI
         /// </summary>
         [JsonProperty("roman2")]
         public string Roman2 { get; set; }
 
         /// <summary>
-        /// Operation to perform: add, subtract, multiply, or divide (default: add)
-        /// Example: add
+        /// Operation to perform
         /// </summary>
         [JsonProperty("operation")]
         public string Operation { get; set; }
