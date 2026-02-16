@@ -44,7 +44,11 @@ from apiverve_romannumeralmath.apiClient import RomannumeralmathAPIClient
 # Initialize the client with your APIVerve API key
 api = RomannumeralmathAPIClient("[YOUR_API_KEY]")
 
-query = { "roman1": "XIV", "roman2": "VI", "operation": "add" }
+query = {
+    "roman1": "XIV",
+    "roman2": "VI",
+    "operation": "add"
+}
 
 try:
     # Make the API call
@@ -82,7 +86,11 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "roman1": "XIV", "roman2": "VI", "operation": "add" }
+query = {
+    "roman1": "XIV",
+    "roman2": "VI",
+    "operation": "add"
+}
 ```
 
 ###### Simple Request
@@ -128,7 +136,11 @@ from apiverve_romannumeralmath.apiClient import RomannumeralmathAPIClient, Roman
 
 api = RomannumeralmathAPIClient("[YOUR_API_KEY]")
 
-query = { "roman1": "XIV", "roman2": "VI", "operation": "add" }
+query = {
+    "roman1": "XIV",
+    "roman2": "VI",
+    "operation": "add"
+}
 
 try:
     result = api.execute(query)
@@ -149,7 +161,11 @@ from apiverve_romannumeralmath.apiClient import RomannumeralmathAPIClient, Roman
 
 api = RomannumeralmathAPIClient("[YOUR_API_KEY]")
 
-query = { "roman1": "XIV", "roman2": "VI", "operation": "add" }
+query = {
+    "roman1": "XIV",
+    "roman2": "VI",
+    "operation": "add"
+}
 
 try:
     result = api.execute(query)
@@ -183,7 +199,11 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_romannumeralmath.apiClient import RomannumeralmathAPIClient, RomannumeralmathAPIClientError
 
-query = { "roman1": "XIV", "roman2": "VI", "operation": "add" }
+query = {
+    "roman1": "XIV",
+    "roman2": "VI",
+    "operation": "add"
+}
 
 # Using context manager ensures proper cleanup
 with RomannumeralmathAPIClient("[YOUR_API_KEY]") as api:
@@ -209,7 +229,11 @@ from apiverve_romannumeralmath.apiClient import RomannumeralmathAPIClient
 # Enable debug mode
 api = RomannumeralmathAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "roman1": "XIV", "roman2": "VI", "operation": "add" }
+query = {
+    "roman1": "XIV",
+    "roman2": "VI",
+    "operation": "add"
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -224,8 +248,13 @@ from apiverve_romannumeralmath.apiClient import RomannumeralmathAPIClient
 
 api = RomannumeralmathAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "roman1": "XIV",
+    "roman2": "VI",
+    "operation": "add"
+}
+
 try:
-    query = { "roman1": "XIV", "roman2": "VI", "operation": "add" }
     result = api.execute(query)
     print(result)
 finally:
