@@ -13,7 +13,14 @@ const API_URL = 'https://api.apiverve.com/v1/romannumeralmath';
  */
 async function callRomanNumeralMathAPI() {
   try {
-    const response = await fetch(API_URL, {
+    // Query parameters
+    const params &#x3D; new URLSearchParams({
+            roman1: &#x27;XIV&#x27;,
+            roman2: &#x27;VI&#x27;,
+            operation: &#x27;add&#x27;
+        });
+
+    const response = await fetch(`${API_URL}?${params}`, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY
