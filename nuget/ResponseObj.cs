@@ -25,6 +25,9 @@ namespace APIVerve.API.RomanNumeralMath
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -36,16 +39,16 @@ namespace APIVerve.API.RomanNumeralMath
         public string Roman2 { get; set; }
 
         [JsonProperty("roman1_value")]
-        public long Roman1Value { get; set; }
+        public long? Roman1Value { get; set; }
 
         [JsonProperty("roman2_value")]
-        public long Roman2Value { get; set; }
+        public long? Roman2Value { get; set; }
 
         [JsonProperty("operation")]
         public string Operation { get; set; }
 
         [JsonProperty("result_number")]
-        public long ResultNumber { get; set; }
+        public long? ResultNumber { get; set; }
 
         [JsonProperty("result_roman")]
         public string ResultRoman { get; set; }
@@ -55,5 +58,17 @@ namespace APIVerve.API.RomanNumeralMath
 
         [JsonProperty("equation_roman")]
         public string EquationRoman { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
