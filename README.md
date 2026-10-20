@@ -1,13 +1,13 @@
-# [Roman Numeral Math API](https://apiverve.com/marketplace/romannumeralmath?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Roman Numeral Math API](https://apiverve.com/marketplace/romannumeralmath?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Roman Numeral Math is a tool for performing mathematical operations (add, subtract, multiply, divide) with Roman numerals. It shows both numeric and Roman numeral equations.
+Roman Numeral Math computes addition, subtraction, multiplication, and division between two Roman numerals. It returns the calculated result and complete equation in both Roman numeral and standard integer formats.
 
 The Roman Numeral Math API provides a simple, reliable way to integrate roman numeral math functionality into your applications. Built for developers who need production-ready roman numeral math capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/romannumeralmath?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/romannumeralmath?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/romannumeralmath?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/romannumeralmath?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -163,7 +163,7 @@ go get github.com/apiverve/romannumeralmath-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Roman Numeral Math API](https://apiverve.com/marketplace/romannumeralmath?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Roman Numeral Math API](https://apiverve.com/marketplace/romannumeralmath?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/romannumeralmath](https://docs.apiverve.com/ref/romannumeralmath)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -193,11 +193,36 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Roman Numeral Math API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "roman1": "XIV",
+    "roman2": "VI",
+    "roman1_value": 14,
+    "roman2_value": 6,
+    "operation": "add",
+    "result_number": 20,
+    "result_roman": "XX",
+    "equation_numeric": "14 + 6 = 20",
+    "equation_roman": "XIV + VI = XX"
+  }
 }
 ```
 
@@ -205,7 +230,7 @@ All responses are JSON with this structure:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Roman Numeral Math API](https://apiverve.com/marketplace/romannumeralmath?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Roman Numeral Math API](https://apiverve.com/marketplace/romannumeralmath?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)

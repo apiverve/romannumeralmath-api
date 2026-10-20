@@ -2,9 +2,9 @@ openapi: 3.0.4
 info:
   title: Roman Numeral Math
   description: >-
-    Roman Numeral Math is a tool for performing mathematical operations (add,
-    subtract, multiply, divide) with Roman numerals. It shows both numeric and
-    Roman numeral equations.
+    Roman Numeral Math computes addition, subtraction, multiplication, and
+    division between two Roman numerals. It returns the calculated result and
+    complete equation in both Roman numeral and standard integer formats.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -19,7 +19,7 @@ servers:
 paths:
   /v1/romannumeralmath:
     get:
-      summary: Calculate Roman Numerals
+      summary: Roman Numeral Math
       description: Perform arithmetic operations with Roman numerals
       operationId: romannumeralmath
       parameters:
