@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/romannumeralmath",
-  "version": "1.2.0",
-  "description": "Roman Numeral Math is a tool for performing mathematical operations (add, subtract, multiply, divide) with Roman numerals. It shows both numeric and Roman numeral equations.",
+  "version": "1.2.2",
+  "description": "Roman Numeral Math computes addition, subtraction, multiplication, and division between two Roman numerals. It returns the calculated result and complete equation in both Roman numeral and standard integer formats.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/romannumeralmath-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/romannumeralmath?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/romannumeralmath?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
