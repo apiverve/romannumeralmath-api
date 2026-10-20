@@ -1,13 +1,12 @@
-RomanNumeralMath API
+Roman Numeral Math API
 ============
 
-Roman Numeral Math is a tool for performing mathematical operations (add, subtract, multiply, divide) with Roman numerals. It shows both numeric and Roman numeral equations.
+Roman Numeral Math computes addition, subtraction, multiplication, and division between two Roman numerals. It returns the calculated result and complete equation in both Roman numeral and standard integer formats.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a .NET Wrapper for the [RomanNumeralMath API](https://apiverve.com/marketplace/romannumeralmath?utm_source=nuget&utm_medium=readme)
+[![NuGet version](https://img.shields.io/nuget/v/APIVerve.API.RomanNumeralMath.svg)](https://www.nuget.org/packages/APIVerve.API.RomanNumeralMath)
+
+This is a .NET wrapper for the [Roman Numeral Math API](https://apiverve.com/marketplace/romannumeralmath?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -40,8 +39,8 @@ From within Visual Studio:
 
 ## Configuration
 
-Before using the romannumeralmath API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=readme)
+Before using the Roman Numeral Math API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -61,10 +60,10 @@ class Program
         var apiClient = new RomanNumeralMathAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new RomanNumeralMathQueryOptions {
-    Roman1 = "XIV",
-    Roman2 = "VI",
-    Operation = "add"
-};
+            Roman1 = "XIV",
+            Roman2 = "VI",
+            Operation = "add"
+        };
 
         // Make the API call
         try
@@ -94,13 +93,13 @@ class Program
 
 ## Usage
 
-The RomanNumeralMath API documentation is found here: [https://docs.apiverve.com/ref/romannumeralmath](https://docs.apiverve.com/ref/romannumeralmath?utm_source=nuget&utm_medium=readme).
+The Roman Numeral Math API documentation is found here: [https://docs.apiverve.com/ref/romannumeralmath](https://docs.apiverve.com/ref/romannumeralmath?utm_source=nuget&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
 
 ###### Authentication
-RomanNumeralMath API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
+Roman Numeral Math API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
 
 ```csharp
 // Create an instance of the API client
@@ -127,10 +126,10 @@ public class Example
         var apiClient = new RomanNumeralMathAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new RomanNumeralMathQueryOptions {
-    Roman1 = "XIV",
-    Roman2 = "VI",
-    Operation = "add"
-};
+            Roman1 = "XIV",
+            Roman2 = "VI",
+            Operation = "add"
+        };
 
         var response = await apiClient.ExecuteAsync(queryOptions);
 
@@ -161,10 +160,10 @@ public class Example
         var apiClient = new RomanNumeralMathAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new RomanNumeralMathQueryOptions {
-    Roman1 = "XIV",
-    Roman2 = "VI",
-    Operation = "add"
-};
+            Roman1 = "XIV",
+            Roman2 = "VI",
+            Operation = "add"
+        };
 
         var response = apiClient.Execute(queryOptions);
 
@@ -200,10 +199,10 @@ public class Example
         var apiClient = new RomanNumeralMathAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new RomanNumeralMathQueryOptions {
-    Roman1 = "XIV",
-    Roman2 = "VI",
-    Operation = "add"
-};
+            Roman1 = "XIV",
+            Roman2 = "VI",
+            Operation = "add"
+        };
 
         try
         {
@@ -258,10 +257,10 @@ public class Example
         apiClient.SetRetryDelay(2000);     // Wait 2 seconds between retries
 
         var queryOptions = new RomanNumeralMathQueryOptions {
-    Roman1 = "XIV",
-    Roman2 = "VI",
-    Operation = "add"
-};
+            Roman1 = "XIV",
+            Roman2 = "VI",
+            Operation = "add"
+        };
 
         try
         {
@@ -402,7 +401,7 @@ using (var apiClient = new RomanNumeralMathAPIClient("[YOUR_API_KEY]"))
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -413,12 +412,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
