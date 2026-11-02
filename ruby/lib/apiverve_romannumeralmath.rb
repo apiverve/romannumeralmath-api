@@ -4,6 +4,6 @@ require_relative "apiverve_romannumeralmath/client"
 
 module APIVerve
   module Romannumeralmath
-    VERSION = "1.2.2"
+    VERSION = "1.2.4"
   end
 end
